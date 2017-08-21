@@ -1,19 +1,23 @@
-=Jexia Klingon=
+# Jexia Klingon
 
 Translate a name written in English to Klingon and find out its species
 
-==Requirements==
+## Requirements
 
-Node.js >= v6.11.2 (ES6 support)
-npm
-Git
+* **Node.js** >= v6.11.2 (ES6 support)
+* **npm** Package Manager
+* **Git** Source Control
 
-==Setup==
+## Setup
 
-git clone https://github.com/efvi/jexia-klingon.git
+Enter this commands on a terminal
+
+```git clone https://github.com/efvi/jexia-klingon.git
 cd jexia-klingon
-chmod +x jexia-klingon
+chmod +x jexia-klingon```
 
-==Usage==
+## Usage
+
+Enter this command on a terminal
 
 ./jexia-klingon <parameter1> <parameter2> ...
