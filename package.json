@@ -1,10 +1,10 @@
 {
   "name": "jexia-klingon",
   "version": "1.0.0",
-  "description": "",
+  "description": "Translate a name written in English to Klingon and find out its species",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=6.11.2"
   },
   "author": "Eduardo Vieira <eduardofelipevieira@gmail.com>",
   "license": "ISC"
