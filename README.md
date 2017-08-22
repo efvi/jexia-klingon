@@ -24,7 +24,7 @@ $ chmod +x jexia-klingon
 On a terminal
 
 ```bash
-$ ./jexia-klingon <Name in English to be translated>
+$ ./jexia-klingon <Name to be translated>
 ```
 
 Where the first parameter is the name of any Star Treck character (it can have spaces between words). As output, his name will be translated to Klingon and his species will be printed as well.
