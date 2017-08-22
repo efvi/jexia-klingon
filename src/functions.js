@@ -1,7 +1,6 @@
 const rp = require('request-promise')
 
-// I've splitted that code into functions for testing purposes
-
+// I've splitted the code into functions for testing purposes
 module.exports.translate = (sentence) => {
     // English chars vs Klingon alphabet
     const pIqaD = new Map([
@@ -59,19 +58,19 @@ module.exports.translate = (sentence) => {
         // All possible combinations among upper and lower case
         if ((str === 'c' || str === 'C') &&
             (sentence.charAt(i + 1) === 'h') || sentence.charAt(i + 1) === 'H') {
-            // Ignore next char
+            // Ignore next 2 chars
             i += 2
 
             append('0xF8D2', i)
         } else if ((str === 'g' || str === 'G') &&
             (sentence.charAt(i + 1) === 'h') || sentence.charAt(i + 1) === 'H') {
-            // Ignore next char
+            // Ignore next 2 chars
             i += 2
 
             append('0xF8D5', i)
         } else if ((str === 'n' || str === 'N') &&
             (sentence.charAt(i + 1) === 'g') || sentence.charAt(i + 1) === 'G') {
-            // Ignore next char
+            // Ignore next 2 chars
             i += 2
 
             append('0xF8DC', i)
@@ -148,7 +147,7 @@ module.exports.getSpecies = (character) => {
                             reject(err)
                         })
                 } else {
-                    reject(new Error('That search doesn\'t matches any results'))
+                    reject(new Error('The search doesn\'t matches any results'))
                 }
             })
             .catch((err) => {
