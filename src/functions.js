@@ -12,13 +12,13 @@ module.exports.translate = (sentence) => {
         ['e', '0xF8D4'],
         //['gh', '0xF8D5'],
         ['H', '0xF8D6'],
-        ['​I', '0xF8D7'],
-        ['​j', '0xF8D8'],
-        ['​l', '0xF8D9'],
-        ['​m', '0xF8DA'],
+        ['I', '0xF8D7'],
+        ['j', '0xF8D8'],
+        ['l', '0xF8D9'],
+        ['m', '0xF8DA'],
         ['n', '0xF8DB'],
         //['​ng', '0xF8DC'],
-        ['​o', '0xF8DD'],
+        ['o', '0xF8DD'],
         ['p', '0xF8DE'],
         ['q', '0xF8DF'],
         ['Q', '0xF8E0'],
@@ -38,7 +38,7 @@ module.exports.translate = (sentence) => {
         ['4', '0xF8F4'],
         ['5', '0xF8F5'],
         ['6', '0xF8F6'],
-        ['​7', '0xF8F7'],
+        ['7', '0xF8F7'],
         ['8', '0xF8F8'],
         ['9', '0xF8F9'],
         [',', '0xF8FD'],
@@ -116,8 +116,6 @@ module.exports.translate = (sentence) => {
 }
 
 module.exports.getSpecies = (character) => {
-
-
     let options = {
         method: 'POST',
         uri: 'http://stapi.co/api/v1/rest/character/search',
