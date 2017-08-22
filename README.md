@@ -27,7 +27,7 @@ On a terminal
 $ ./jexia-klingon <Name in English to be translated>
 ```
 
-Where the first parameter passed is a name written in English (it can have spaces between words) which will be translated to Klingon.
+Where the first parameter passed is a name of any Star Treck character (it can have spaces between words). As output, his name will be translated to Klingon and his species will be printed as well.
 
 ## Tests
 
