@@ -2,10 +2,17 @@
   "name": "jexia-klingon",
   "version": "1.0.0",
   "description": "Translate a name written in English to Klingon and find out its species",
-  "main": "server.js",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "mocha lib/**/**.spec.js",
+    "start": "node src/app.js"
+  },
   "engines": {
     "node": ">=6.11.2"
   },
   "author": "Eduardo Vieira <eduardofelipevieira@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2"
+  }
 }
