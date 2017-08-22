@@ -1,3 +1,5 @@
+// I've splitted that code into functions for testing purposes
+
 let translate = function (sentence) {
     // English chars vs Klingon alphabet
     const pIqaD = new Map([
@@ -113,18 +115,25 @@ let getSpecies = function (character) {
     return undefined
 }
 
-module.exports.translate = translate
-module.exports.getSpecies = getSpecies
-
-// 1st parameter: node path
-// 2nd parameter: script path
-// 3rd and so on: console parameters
-if (process.argv.length < 3) {
-    console.error('ERROR: It requires at least one parameter')
-
-    return
+module.exports = {
+    translate: translate,
+    getSpecies: getSpecies
 }
 
-const sentence = process.argv.slice(2).join(' ')
+function main() {
+    // 1st parameter: node path
+    // 2nd parameter: script path
+    // 3rd and so on: console parameters
+    if (process.argv.length < 3) {
+        console.error('ERROR: It requires at least one parameter')
 
-console.log(translate(sentence))
+        return
+    }
+
+    const sentence = process.argv.slice(2).join(' ')
+
+    console.log(translate(sentence))
+}
+
+// Main function invoked ONLY via shell
+main()
