@@ -1,3 +1,5 @@
+'use strict'
+
 const f = require('./functions')
 
 function main() {

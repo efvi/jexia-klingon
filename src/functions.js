@@ -1,3 +1,5 @@
+'use strict'
+
 const rp = require('request-promise')
 
 // I've splitted the code into functions for testing purposes
@@ -135,7 +137,7 @@ module.exports.getSpecies = (character) => {
                         .then((res) => {
                             let output = ''
 
-                            resJSON = JSON.parse(res)
+                            let resJSON = JSON.parse(res)
 
                             resJSON.character.characterSpecies.forEach((species) => {
                                 output += species.name
